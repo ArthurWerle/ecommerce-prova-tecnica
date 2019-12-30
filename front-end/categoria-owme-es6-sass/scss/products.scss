@@ -1,0 +1,12 @@
+.product > .image {
+    width: 30em;
+}
+
+
+@media only screen and (max-width: 600px) { 
+
+    .product > .image {
+        width: 19em;
+    }
+
+}

@@ -1,0 +1,108 @@
+$active-color: rgb(103, 155, 103);
+$font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+
+
+
+html, body {
+    width: 99%;
+    height: 100%;
+    margin: 0;
+    font-family: $font-family;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container * {
+    font-size: 10px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.fluid {
+    width: 100%;
+}
+
+.float.right {
+    float: right;
+}
+
+.column {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.column.two.rows > .row {
+    width: 49%;
+}
+
+.column.three.rows > .row {
+    width: 33%;
+}
+
+.column.four.rows > .row {
+    width: 24%;
+}
+
+.align.right {
+    text-align: right;
+}
+
+.align.left {
+    text-align: left;
+}
+
+.align.center {
+    text-align: center;
+}
+
+.row {
+    display: inline-block;
+}
+
+.header {
+    border-bottom: 1px solid #E8E8E8;
+    padding: 15px;
+    margin-bottom: 2em;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.text-active {
+    color: $active-color;
+}
+
+.mobile.text * {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) { 
+
+    .mobile.hide {
+        display: none;
+    }
+
+    .mobile.title {
+        margin-left: 33%;
+    }
+
+
+    .column.four.rows > .row {
+        width: 49%;
+    }
+
+
+}
+
+@media only screen and (min-width: 600px) { 
+
+    .mobile.hide {
+        display: inline-block;
+    }
+    
+}
